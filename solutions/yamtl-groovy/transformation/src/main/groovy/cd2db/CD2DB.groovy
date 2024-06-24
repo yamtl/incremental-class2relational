@@ -159,7 +159,7 @@ public class CD2DB extends YAMTLModule {
 		// helper
         helperStore([
             staticAttribute('objectIdType', {
-                allInstances(CD.DataType).find{ it instanceof DataType && it.name == 'Integer' }
+                allInstances(CD.DataType).find{ it.name == 'Integer' }
             })
         ])
     }
